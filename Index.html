@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0c2043c0b7.js" crossorigin="anonymous"></script>
+    <title>Guilherme Pereira</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="34c44b321268000b8f7a1982365d40b9-removebg-preview.png" alt="Logo Guilherme Pereira">
+        </div>
+        <ul>
+            <li>
+                <a target="blank" href="https://www.linkedin.com/in/guilherme-de-oliveira-pereira-337aa3128/">LinkedIn</a>
+            </li>
+            <li>
+                <a target="blank" href="https://github.com/GuilhermeOPereira">Github</a>
+            </li>
+            <li>
+                <a target="blank" href="mailto:guidoliveira@lwmail.com">Email</a>
+            </li>
+            <li>
+                <a target="blank" href="https://wa.me/21976573064">Whatsapp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Guilherme Pereira</h1>
+                <br>
+                <h5>Front-End Developer</h5>
+            </div>  
+            
+            <div onclick="displayAbout()" id="arrow">
+                <i id= animation class="fa-solid fa-square-caret-down"></i>
+            </div>
+            <div style= "display: none;"id="about">
+                <p>
+                    Me chamo Guilherme de Oliveira Pereira, tenho 30 anos, estou trilhando o caminho da tecnologia com a graduação em sistemas de informação e buscando aprimorar meus conhecimentos em busca de uma colocação no mercado de trabalho.
+                </p>
+            </div>
+            
+            <br>
+        
+            <div class="form">
+                <div>
+                <p>Deixe seu contato!</p>
+            </div>
+            <br>
+    
+                <form action="">
+                    <input type="text" placeholder="Seu melhor e-mail :)">
+                    <button>enviar!</button>
+                </form>
+                <footer>
+                    <p>
+                        # Todos os direitos reservados. #
+                    </p>
+                </footer>
+            </div>
+        </section>
+    </main> 
+    
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
